@@ -23,7 +23,7 @@
 <script>
 function loadBili() {
   var wrap = document.getElementById('bili-wrap');
-  wrap.innerHTML = '<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=116817842406583&bvid=BV1mS776CE6m&cid=39436487579&p=1&autoplay=1" ' +
+  wrap.innerHTML = '<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=117162563930849&bvid=BV13v8Z68EYK&cid=41298560322&p=1" ' +
     'scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" ' +
     'style="position: absolute; inset: 0; width: 100%; height: 100%; border: none;"></iframe>';
 }
