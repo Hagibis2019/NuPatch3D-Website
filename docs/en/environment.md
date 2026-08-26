@@ -41,7 +41,7 @@ pip uninstall cellrefine3d
 
 ## 2.4 Launching NuPatch3D
 
-Click the menu bar <kbd>Plugins</kbd> → <kbd>CellRefine-3D (CellRefine-3D)</kbd>. The NuPatch3D plugin panel will automatically dock on the right side of the napari window.
+Click the menu bar <kbd>Plugins</kbd> → <kbd>NuPatch3D (NuPatch-3D)</kbd>. The NuPatch3D plugin panel will automatically dock on the right side of the napari window.
 
 <div style="text-align: center; margin: 1.5em 0;">
   <img src="../../images/media/image2.png" style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
@@ -63,7 +63,7 @@ If multiple layers of the same type are loaded (e.g., multiple label images), pl
 
 ## 2.6 Configuring the Plugin Environment
 
-Before starting editing, it is recommended to complete the following settings in the <kbd>CellRefine-3D Settings</kbd> region (Figure 5):
+Before starting editing, it is recommended to complete the following settings in the <kbd>NuPatch-3D Settings</kbd> region (Figure 5):
 
 * **Panel Layout**: If the NuPatch3D control panel is not displayed on the right side of the napari main window, click <kbd>Dock Right</kbd> to fix it to the right side of the window.
 * **Font Size**: Adjust the font size of the NuPatch3D control panel in real time through the <kbd>Font Size</kbd> input box.

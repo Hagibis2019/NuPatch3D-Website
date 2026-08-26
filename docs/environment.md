@@ -41,7 +41,7 @@ pip uninstall cellrefine3d
 
 ## 2.4 启动 NuPatch3D
 
-点击菜单栏 <kbd>Plugins</kbd> → <kbd>CellRefine-3D (CellRefine-3D)</kbd>，NuPatch3D 插件面板将自动停靠在 napari 窗口右侧。
+点击菜单栏 <kbd>Plugins</kbd> → <kbd>NuPatch3D (NuPatch-3D)</kbd>，NuPatch3D 插件面板将自动停靠在 napari 窗口右侧。
 
 <div style="text-align: center; margin: 1.5em 0;">
   <img src="../images/media/image2.png" style="max-width: 70%; height: auto; display: block; margin: 0 auto;">
@@ -63,7 +63,7 @@ pip uninstall cellrefine3d
 
 ## 2.6 配置插件工作环境
 
-在开始编辑前，建议先在 <kbd>CellRefine-3D Settings</kbd> 区域（图 5）完成以下设置：
+在开始编辑前，建议先在 <kbd>NuPatch-3D Settings</kbd> 区域（图 5）完成以下设置：
 
 * **界面布局**：如果 NuPatch3D 控制面板未显示在 napari 主窗口右侧，可点击 <kbd>Dock Right</kbd> 将其固定到窗口右侧。
 * **字体大小**：通过 <kbd>Font Size</kbd> 输入框实时调整 NuPatch3D 控制面板的字体大小。
