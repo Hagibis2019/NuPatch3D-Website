@@ -4,13 +4,11 @@
 
 
 <div style="text-align: center; margin: 2em 0;">
-  <div id="bili-wrap" style="position: relative; width: 80%; max-width: 800px; margin: 0 auto; aspect-ratio: 16/9; background: #000;">
-    <!-- 自定义封面 -->
-    <img id="bili-poster" src="../images/media/image4.png" 
+  <div id="video-wrap" style="position: relative; width: 80%; max-width: 800px; margin: 0 auto; aspect-ratio: 16/9; background: #000;">
+    <img id="video-poster" src="https://img.youtube.com/vi/HgknF05EYHs/0.jpg" 
          style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; cursor: pointer; z-index: 1;" 
-         onclick="loadBili()">
-    <!-- 播放按钮 -->
-    <div onclick="loadBili()" 
+         onclick="loadVideo()">
+    <div onclick="loadVideo()" 
          style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); 
                 width: 64px; height: 64px; background: rgba(0,0,0,0.6); border-radius: 50%; 
                 cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 2;">
@@ -21,10 +19,11 @@
 </div>
 
 <script>
-function loadBili() {
-  var wrap = document.getElementById('bili-wrap');
-  wrap.innerHTML = '<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=117162563930849&bvid=BV13v8Z68EYK&cid=41298560322&p=1" ' +
-    'scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" ' +
+function loadVideo() {
+  var wrap = document.getElementById('video-wrap');
+  wrap.innerHTML = '<iframe src="https://www.youtube.com/embed/HgknF05EYHs?autoplay=1&rel=0" ' +
+    'frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ' +
+    'allowfullscreen ' +
     'style="position: absolute; inset: 0; width: 100%; height: 100%; border: none;"></iframe>';
 }
 </script>

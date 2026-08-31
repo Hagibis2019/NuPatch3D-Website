@@ -24,8 +24,8 @@ conda activate napari-env
 pip install "napari[all]"
 
 # 4. 克隆仓库
-git clone https://github.com/Hagibis2019/CellRefine3D.git
-cd CellRefine3D
+git clone https://github.com/Hagibis2019/NuPatch3D.git
+cd NuPatch3D
 
 # 5. 安装 NuPatch3D
 pip install .
@@ -36,7 +36,7 @@ pip install .
 如需卸载插件，请在对应环境中运行：
 
 ```bash
-pip uninstall cellrefine3d
+pip uninstall NuPatch3D
 ```
 
 ## 2.4 启动 NuPatch3D

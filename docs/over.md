@@ -1,4 +1,4 @@
-# 五、过分割合并
+# 五、过分割
 
 过分割是指同一细胞被错误分割为多个独立标签。NuPatch3D 提供标签合并功能，可将多个标签合并为一个标签，也可直接删除不存在的细胞的标签。 相关操作位于插件面板 <kbd>Cell Boundary Refine</kbd> 的 <kbd>Over-segmentation (Merge)</kbd> 区域。
 

@@ -1,4 +1,4 @@
-# Basic napari Operations
+# Napari Basics
 
 This section introduces the basic [napari](https://napari.org/) operations required when using NuPatch3D. For the full functionality and detailed usage of napari, please refer to the [napari official documentation](https://napari.org/stable/).
 
@@ -85,9 +85,9 @@ napari provides a variety of native annotation tools, which can be selected thro
 >
 > napari native annotation operations support <kbd>Ctrl</kbd>+<kbd>Z</kbd> undo.
 
-NuPatch3D's local editing functions are fully compatible with the above native tools. For example, you can first use the eraser to remove erroneous bridges, and then execute the plugin's connected components relabeling function to fix under-segmentation issues (see [Under-segmentation Refinement](under.md)); you can also use the brush to supplement labels in boundary-missing regions, and then invoke the density-constrained boundary refinement function (see [Boundary Refinement](boundary.md)).
+NuPatch3D's local editing functions are fully compatible with the above native tools. For example, you can first use the eraser to remove erroneous bridges, and then execute the plugin's connected components relabeling function to fix under-segmentation issues (see [Under-segmentation](under.md)); you can also use the brush to supplement labels in boundary-missing regions, and then invoke the density-constrained boundary refinement function (see [Boundary Fix](boundary.md)).
 
-All annotation operations, including napari's native annotation tools, are incorporated into NuPatch3D's unified editing history management mechanism and recorded in the JSON operation log. Users can use the undo, redo, and restore functions provided by the plugin to achieve traceability and recovery of voxel-level editing processes. For detailed instructions, please refer to [Restoring Results](restore.md).
+All annotation operations, including napari's native annotation tools, are incorporated into NuPatch3D's unified editing history management mechanism and recorded in the JSON operation log. Users can use the undo, redo, and restore functions provided by the plugin to achieve traceability and recovery of voxel-level editing processes. For detailed instructions, please refer to [Recovery](restore.md).
 
 ## 1.5 Layer Management
 
@@ -102,7 +102,7 @@ After NuPatch3D extracts the local editing region, the following layers are auto
 * `<ImageName>-Crop`: Local original image;
 * `<ImageName>-LabelFix`: Local label image.
 
-Users can switch between global and local views via the <kbd>Global View</kbd> toggle to focus on the current editing region and avoid accidentally modifying other cells. For detailed instructions, please refer to [Basic Operations of NuPatch3D](loading.md).
+Users can switch between global and local views via the <kbd>Global View</kbd> toggle to focus on the current editing region and avoid accidentally modifying other cells. For detailed instructions, please refer to [Basic Operations](loading.md).
 
 ---
 

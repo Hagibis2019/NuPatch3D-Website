@@ -1,4 +1,4 @@
-# Under-segmentation Split
+# Under-segmentation
 
 Under-segmentation refers to multiple independent cells being incorrectly labeled with the same label. NuPatch3D provides three under-segmentation repair modes:
 
@@ -15,7 +15,7 @@ In the <kbd>Cell Boundary Refine</kbd> region of the plugin panel, select the sp
   <div style="color: #666; font-size: 0.9em; margin-top: 0.5em;">Figure 9. Under-segmentation Panel</div>
 </div>
 
-After label repair, you must click the <kbd>Commit</kbd> button in the <kbd>Interaction</kbd> region, or press the shortcut <kbd>Shift</kbd>+<kbd>S</kbd>, to write the modified results back to the global <kbd>Labels</kbd> layer. Otherwise, the repaired labels will only be saved in the current local editing region and will not be synchronized to the global label layer. For detailed instructions on committing and saving results, please refer to [Saving Results](save.md).
+After label repair, you must click the <kbd>Commit</kbd> button in the <kbd>Interaction</kbd> region, or press the shortcut <kbd>Shift</kbd>+<kbd>S</kbd>, to write the modified results back to the global <kbd>Labels</kbd> layer. Otherwise, the repaired labels will only be saved in the current local editing region and will not be synchronized to the global label layer. For detailed instructions on committing and saving results, please refer to [Save](save.md).
 
 ## 4.1 Plane Mode (Plane Splitting)
 

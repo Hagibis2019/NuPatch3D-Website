@@ -1,4 +1,4 @@
-# Installation and Setup of NuPatch3D
+# Installation & Setup
 
 ## 2.1 System and Hardware Requirements
 
@@ -24,8 +24,8 @@ conda activate napari-env
 pip install "napari[all]"
 
 # 4. Clone the repository
-git clone https://github.com/Hagibis2019/CellRefine3D.git
-cd CellRefine3D
+git clone https://github.com/Hagibis2019/NuPatch3D.git
+cd NuPatch3D
 
 # 5. Install NuPatch3D
 pip install .
@@ -36,7 +36,7 @@ pip install .
 To uninstall the plugin, run the following command in the corresponding environment:
 
 ```bash
-pip uninstall cellrefine3d
+pip uninstall NuPatch3D
 ```
 
 ## 2.4 Launching NuPatch3D

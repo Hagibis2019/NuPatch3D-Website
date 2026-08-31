@@ -1,4 +1,4 @@
-# Cell Nucleus Boundary Refinement
+# Boundary Fix
 
 Boundary refinement is used to correct deviations between pre-segmented labels and the true cell nucleus contours, such as boundary over-expansion intruding into the background, or boundary shrinkage causing missing cell regions. NuPatch3D re-estimates the cell boundary based on local image intensity information, and generates smooth, connected cell masks through morphological post-processing. The relevant functions are located in the <kbd>Boundary Fix</kbd> region of the <kbd>Cell Boundary Refine</kbd> plugin panel.
 
@@ -7,7 +7,7 @@ Boundary refinement is used to correct deviations between pre-segmented labels a
   <div style="color: #666; font-size: 0.9em; margin-top: 0.5em;">Figure 20. Boundary Fix Panel</div>
 </div>
 
-After refinement is completed, you must click the <kbd>Commit</kbd> button in the <kbd>Interaction</kbd> region, or press the shortcut <kbd>Shift</kbd>+<kbd>S</kbd>, to write the modified results back to the global <kbd>Labels</kbd> layer. Otherwise, the repaired labels will only be saved in the current local editing region and will not be synchronized to the global label layer. For detailed instructions on committing and saving results, please refer to [Saving Results](save.md).
+After refinement is completed, you must click the <kbd>Commit</kbd> button in the <kbd>Interaction</kbd> region, or press the shortcut <kbd>Shift</kbd>+<kbd>S</kbd>, to write the modified results back to the global <kbd>Labels</kbd> layer. Otherwise, the repaired labels will only be saved in the current local editing region and will not be synchronized to the global label layer. For detailed instructions on committing and saving results, please refer to [Save](save.md).
 
 ## 6.1 Set Parameters
 
@@ -27,8 +27,8 @@ In general:
 
 <kbd>Scaling</kbd> is the scaling coefficient for the boundary search range (default: 1.00).
 
-* Greater than 1.0: Expands the search range;
-* Less than 1.0: Shrinks the search range.
+* Greater than 1.00: Expands the search range;
+* Less than 1.00: Shrinks the search range.
 
 ### Use Hull
 
@@ -49,7 +49,7 @@ NuPatch3D will recalculate the target cell boundary based on the local original 
 
 After refinement is completed, it is recommended to check the boundary fit with the fluorescence signal in the 2D or 3D view. If the result is not ideal, adjust the parameters and execute <kbd>Boundary Fix</kbd> again.
 
-Boundary refinement is usually used in conjunction with napari's brush, eraser, and other tools to achieve more precise results. See [Basic napari Operations](napari.md) for details.
+Boundary refinement is usually used in conjunction with napari's brush, eraser, and other tools to achieve more precise results. See [Basic Operations](napari.md) for details.
 
 <div style="text-align: center; margin: 2em 0;">
   <div style="display: inline-block; vertical-align: middle; text-align: center; width: 280px; margin: 0 15px;">

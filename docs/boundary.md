@@ -1,4 +1,4 @@
-# 六、细胞核边界修复
+# 六、边界修复
 
 边界修复用于修正预分割标签与真实细胞核轮廓之间的偏差，例如边界过度扩张侵入背景，或边界收缩导致细胞区域缺失。NuPatch3D 基于局部图像强度信息重新估计细胞边界，并通过形态学后处理生成平滑、连通的细胞掩膜。 相关功能位于插件面板 <kbd>Cell Boundary Refine</kbd> 的 <kbd>Boundary Fix</kbd> 区域。
 
@@ -27,8 +27,8 @@
 
 <kbd>Scaling</kbd> 为边界搜索范围的缩放系数（默认值：1.00）。
 
-* 大于 1.0：扩大搜索范围；
-* 小于 1.0：缩小搜索范围。
+* 大于 1.00：扩大搜索范围；
+* 小于 1.00：缩小搜索范围。
 
 ### Use Hull
 
@@ -49,7 +49,7 @@ NuPatch3D 将根据局部原始图像重新计算目标细胞边界，并自动�
 
 修复完成后，建议在 2D 或 3D 视图中检查边界与荧光信号的贴合情况。若结果不理想，可调整参数后再次执行 <kbd>Boundary Fix</kbd>。
 
-边界修复通常与 napari 的画笔、橡皮擦等工具配合使用，以获得更精确的结果，详见 [napari 基本操作](napari.md)。
+边界修复通常与 napari 的画笔、橡皮擦等工具配合使用，以获得更精确的结果，详见 [napari基本操作](napari.md)。
 
 <div style="text-align: center; margin: 2em 0;">
   <div style="display: inline-block; vertical-align: middle; text-align: center; width: 280px; margin: 0 15px;">

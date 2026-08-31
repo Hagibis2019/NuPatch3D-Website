@@ -1,4 +1,4 @@
-# Basic Operations of NuPatch3D
+# Basic Operations
 
 All editing operations in NuPatch3D are performed within a local region (Bounding Box) to reduce interference from surrounding cells on the target cell (specified by the <kbd>Label ID</kbd> input box).
 
